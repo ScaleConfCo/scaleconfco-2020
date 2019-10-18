@@ -1,0 +1,92 @@
+#banner {
+  background-image: url('/assets/images/background-floating-objects.svg');
+  background-color: $purple-dark;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  .banner {
+    > div {
+      
+    }
+    &-objects {
+      position: absolute;
+      max-width: 100%;
+      max-height: 100vh;
+      overflow: hidden;
+      z-index: 0;
+      left: 0; right: 0;
+      svg {
+        display: block;
+        margin: 0 auto;
+        min-height: 100%;
+      }
+    }
+    &-content {
+      color: $white;
+      position: relative;
+      text-align: center;
+      z-index: 2;
+      h1 {
+        font-size: 4.5rem;
+        font-weight: 200;
+        letter-spacing: 0.8rem;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+        span {
+          display: none;
+        }
+      }
+      p {
+        &.date {
+          font-size: 1.5rem;
+          font-weight: 500;
+          margin: 1rem 0;
+        }
+      }
+      a.button {
+        margin-top: 4rem;
+      }
+      svg {
+        position: relative;
+        fill: $white;
+        stroke: $white;
+        margin: -1px;
+        text {
+            text-anchor: middle;
+            font-size: 1px;
+            font-family: inherit;
+            font-weight: bolder;
+            text-transform: uppercase;
+            stroke-width: .005;
+            stroke: $white;
+            &:first-child {
+                fill: none;
+            }
+            &:last-child {
+                fill: $white;
+            }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #banner .banner-content {
+    h1 {
+      font-size: 3rem;
+    }
+    svg text {
+      font-size: 1.3px;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  #banner .banner-content {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}

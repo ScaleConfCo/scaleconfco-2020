@@ -1,0 +1,18 @@
+{% assign t = site.data.[page.lang] %}
+<header id="banner" class="banner">
+  <div>
+    <div class="banner-content">
+      <div class="glitch">
+        {% include svg/glitch.svg %}
+      </div>
+
+      <svg viewbox="0 0 10 1.2" class="glitch-filter">
+          <text x="5" y="0.95">ScaleConf</text>
+          <text class="glitch-filter__filtered-text" x="4.95" y="1">ScaleConf</text>
+        </svg>
+      <h1><span>ScaleConf</span>Colombia</h1>
+      <p class="date">{{ t.date }}</p>
+      <a href="{{ t.link }}" class="button tickets" target="_blank" onclick="ga('send', 'event', 'button', 'click', 'Buy your tickets');">{{ t.tickets }}</a>
+    </div>
+  </div>
+</header>

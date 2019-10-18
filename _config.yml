@@ -1,0 +1,33 @@
+# Site Settings
+title: ScaleConfCo
+email: hola@scaleconfco.com
+description:
+  en: 2-day language-agnostic tech conference about scalability, distributed systems, security, machine learning, DevOps, modern software tools and practices
+  es: Evento agnóstico a lenguajes de programación sobre escalabilidad, sistemas distribuídos, machine learning, seguridad, DevOps, herramientas y prácticas modernas
+baseurl: "/"
+url: "https://scaleconfco.com"
+twitter_username: scaleconfco
+
+repository: scaleconfco-2020/scaleconfco.github.io
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  #- jekyll-redirect-from
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

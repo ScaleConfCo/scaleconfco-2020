@@ -1,0 +1,35 @@
+---
+---
+
+$blue-lighter: #0099F7;
+$purple-dark: #1d2152;
+$purple-light: #262b59;
+$green: #57FEA7;
+$cyan: #00ffff;
+$white: #ffffff;
+$gray: #555555;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: $gray;
+}
+
+.button {
+  background-color: $cyan;
+  border-radius: 33px;
+  color: $purple-dark;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 7rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in;
+  &:hover {
+    background-color: $green;
+  }
+}
+
+@import 'glitch', 'banner';
