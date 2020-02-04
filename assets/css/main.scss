@@ -1,10 +1,10 @@
 ---
 ---
 
-$blue-lighter: #0099F7;
+$blue-lighter: #0099f7;
 $purple-dark: #1d2152;
 $purple-light: #262b59;
-$green: #57FEA7;
+$green: #57fea7;
 $cyan: #00ffff;
 $white: #ffffff;
 $gray: #555555;
@@ -12,7 +12,7 @@ $gray: #555555;
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: $gray;
 }
@@ -32,4 +32,53 @@ body {
   }
 }
 
-@import 'glitch', 'banner';
+section {
+  &.fluid {
+    margin: 0;
+  }
+  svg.title {
+    max-height: 80px;
+    width: 100%;
+  }
+}
+
+section.section--dark {
+  background-color: $purple-dark;
+}
+
+.social {
+  margin: 0rem 0 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin icon($name, $x) {
+  background-position-x: $x;
+  &.white {
+      background-position-x: $x - 355px;
+  }
+}
+
+.icon {
+  background-image: url('../images/social/social.png');
+  background-repeat: no-repeat;
+  background-position-y: -60px;
+  transition: 0.1s;
+  height: 60px;
+  width: 60px;
+  zoom: 0.6;
+  -moz-transform: scale(0.6);
+  overflow: hidden;
+  display: inline-block;
+  &.flickr { @include icon( flickr, 0px ); }
+  &.instagram { @include icon( instagram, -71px ); }
+  &.facebook { @include icon( facebook, -141px ); }
+  &.twitter { @include icon( twitter, -213px ); }
+  &.website { @include icon( website, -284px ); }
+  &:hover {
+      background-position-y: 0px;
+  }
+}
+
+@import "glitch", "banner", "sections", "venue", "about", "footer", "grid",
+  "mailing", "internal", "nav";

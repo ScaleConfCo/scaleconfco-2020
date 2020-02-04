@@ -11,5 +11,33 @@
     "blue": "ScaleConf Colombia is a 2-day language-agnostic tech conference about scalability, distributed systems, security, machine learning, DevOps, modern software tools and practices.",
     "first": "Our main objective is to level up the community’s knowledge, by bringing great speakers from the teams that are paving the way for a global scale in tomorrow’s apps and services.",
     "second": "Our last event was successful beyond our expectations, with over 350 attendees, 19 awesome speakers, 14 sponsors and 2 days of exciting talks. Our next event is happening May 17 & 18, 2019!"
+  },
+  "mailing": {
+    "title": "Stay tuned, join our mailing list",
+    "button": "Join",
+    "follow": "And follow us"
+  },
+  "code": {
+    "title": "Code of Conduct",
+    "texts": [
+      "A primary goal of ScaleConf Colombia is to be inclusive to the largest number of contributors, with the most varied and diverse backgrounds possible.",
+      "As such, we are committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity, socioeconomic status, and religion (or lack thereof). This code of conduct outlines our expectations for all those who participate in our community, as well as the consequences for unacceptable behavior. We invite all those who participate in ScaleConf Colombia to help us create safe and positive experiences for everyone."
+    ],
+    "button": "Read our Code of Conduct"
+  },
+  "venue": {
+    "title": "Venue",
+    "first": "The conference will be held at Complejo Ruta N, Calle 67 Nº 52-20 which is easily accessible by uber, taxi, bus and a 5 minute walk away from Universidad Metro station. There are a bunch of restaurants that are part of Ruta N's complex or a short walking distance in which you will be able to find lunch.",
+    "address": "Address",
+    "venue": {
+      "name": "RutaN Medellín",
+      "address": "Calle 67 Nº 52-20",
+      "website": "https://www.rutanmedellin.org",
+      "linkText": "Website"
+    }
+  },
+  "footer": {
+    "title": "Let’s stay in touch, follow us",
+    "question": "Questions?"
   }
 }

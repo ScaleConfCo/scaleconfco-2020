@@ -1,0 +1,17 @@
+{% assign t = site.data.[page.lang] %}
+<footer>
+    <div>
+        <!--
+        <p class="title">{{ t.footer.title }}</p>
+        {% include social.html %}
+        -->
+        <div>
+            <p class="title">{{ t.footer.question }}</p>
+        </div>
+        <div>
+            <a href="mailto:hola@scaleconfco.com" class="mail" onclick="ga('send', 'event', 'button', 'click', 'Questions');">hola@scaleconfco.com</a>
+        </div>
+    </div>
+</footer>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBJs37uVUzuOn2tO-wO5HpP603nTiEI5w&callback=initMap"></script>
+<script src="/js/main.js"></script>
