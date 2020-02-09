@@ -1,0 +1,66 @@
+section.mailing {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+    div {
+        p {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0.7rem;
+            color: $purple-dark;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        form {
+            margin-bottom: 2rem;
+            .form-email {
+                width: 35vw;
+                margin-right: 0.7rem;
+                border: none;
+                border-bottom: 1px solid $purple-dark;
+                text-align: center;
+                color: $gray;
+            }
+            .form-button {
+                width: 13vw;
+                cursor: pointer;
+                background-color: $blue-lighter;
+                padding: 0.5rem 0.9rem;
+                border-radius: 20px;
+                margin-top: 0.5rem;
+                border-style: none;
+                color: #fff;
+                text-align: center;
+                transition: 0.2s;
+                &:hover {
+                    background-color: $green;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+/*   Responsive Media Queries   */
+@media screen and (max-width: 768px) {
+    section.mailing {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        form {
+            input {
+                display: block;
+                &[type="email"] {
+                    font-size: 1rem;
+                    margin: 1.5rem 0 1rem;
+                    width: 100%;
+                }
+                &[type="submit"] {
+                    margin: 0 auto;
+                    min-width: 10rem;
+                }
+            }
+        }
+    }
+}

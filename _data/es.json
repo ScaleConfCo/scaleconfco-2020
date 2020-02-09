@@ -11,5 +11,33 @@
     "blue": "ScaleConf Colombia es un evento agnóstico a los lenguajes de programación, que busca actualizar los conocimientos de la comunidad en temas como escalabilidad, sistemas distribuídos, machine learning, seguridad, DevOps, herramientas y prácticas modernas de software.",
     "first": "Nuestro principal objetivo es incrementar el nivel del conocimiento de la comunidad, brindando grandes conferencistas de los equipos que estan pavimentando el camino a la escalabilidad global de las aplicaciones y servicios del mañana",
     "second": "Nuestro último evento fue exitoso más allá de nuestras expectativas, con más de 350 asistentes, 19 ponentes increíbles, 14 patrocinadores y dos días de charlas. Nuestro próximo evento se realizara entre Mayo 17 & 18, 2019!"
+  },
+  "mailing": {
+    "title": "Mantente en contacto, entra en nuestra lista de emails",
+    "button": "Entrar",
+    "follow": "Y síguenos"
+  },
+  "code": {
+    "title": "Código de Conducta",
+    "texts": [
+      "Un objetivo principal de ScaleConf Colombia es incluir a la mayor cantidad de contribuyentes, con los perfiles más variados y diversos posibles.",
+      "Como tal, nos comprometemos a proporcionar un entorno amigable, seguro y acogedor para todos, independientemente de su sexo, orientación sexual, capacidad, origen étnico, nivel socioeconómico y religión (o la falta de ella). Este código de conducta describe nuestras expectativas para todos aquellos que participan en nuestra comunidad, así como también las consecuencias de un comportamiento inaceptable. Invitamos a todos los que participan en ScaleConf Colombia a que nos ayuden a crear experiencias seguras y positivas para todos."
+    ],
+    "button": "Lee nuestro Código de Conducta"
+  },
+  "venue": {
+    "title": "Lugar del Evento",
+    "first": "La conferencia se realizará en el Complejo Ruta N, Calle 67 Nº 52-20 al cual se puede llegar fácilmente en taxi, bus o 5 minutos caminando desde la estación Universidad del sistema Metro. Hay varios restaurantes que hacen parte del complejo Ruta N o quedan muy cerca caminando donde podrás encontrar buenos lugares para almorzar.",
+    "address": "Dirección",
+    "venue": {
+      "name": "RutaN Medellín",
+      "address": "Calle 67 Nº 52-20",
+      "website": "https://www.rutanmedellin.org",
+      "linkText": "Sitio Web"
+    }
+  },
+  "footer": {
+    "title": "Estemos en contacto, síguenos",
+    "question": "¿Tienes alguna pregunta?"
   }
 }

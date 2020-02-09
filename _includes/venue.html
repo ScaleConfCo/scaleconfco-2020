@@ -1,0 +1,14 @@
+{% assign t = site.data.[page.lang].venue %}
+<section class="container venue" id="venue">
+    <div class="venue-information">
+        {% include title.html title=t.title %}
+        <p>{{ t.first }}</p>
+        <div>
+            <div>
+                <h4>{{ t.venue.name }}</h4>
+                <p>{{ t.address }}: {{ t.venue.address }}</p>
+                <a class="button blueButton" href="{{ t.venue.website }}">{{ t.venue.linkText }}</a>
+            </div>
+        </div>
+    </div>
+</section>
