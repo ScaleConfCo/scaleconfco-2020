@@ -1,0 +1,12 @@
+{% assign t = site.data.[page.lang].code %}
+<section class="container text-section" id="coc">
+    {% include title.html title=t.title %}
+    <div>
+        {% for text in t.texts %}
+            <p>{{ text }}</p>
+        {% endfor %}
+        <div>
+            <a href="/code-of-conduct/" class="button blueButton" onclick="ga('send', 'event', 'button', 'click', 'COC');">{{ t.button }}</a>
+        </div>
+    </div>
+</section>

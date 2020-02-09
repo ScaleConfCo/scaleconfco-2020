@@ -1,0 +1,50 @@
+section.text-section {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+    svg {
+        margin-bottom: 1rem;
+        text {
+            text-anchor: middle;
+            font-size: 1px;
+            font-family: inherit;
+            font-weight: bolder;
+            text-transform: uppercase;
+            stroke-width: .015;
+            stroke: $purple-dark;
+            &:first-child {
+                fill: none;
+            }
+            &:last-child {
+                fill: $white;
+            }
+        }
+    }
+    div {
+        p {
+            display: flex;
+            margin-bottom: 0.7rem;
+            color: $purple-dark;
+        }
+        > div {
+            margin-top: 1rem;
+            text-align: center;
+            a {
+                margin: 2rem 1rem 0;
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    section.text-section {
+        div {
+            > div {
+                margin-top: 2rem;
+                a {
+                    display: block;
+                    margin: 1rem 1rem 0;
+                }
+            }
+        }
+    }
+}
