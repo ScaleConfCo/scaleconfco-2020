@@ -1,0 +1,21 @@
+section {
+  &.svg {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  .svg-banner {
+    fill: $purple-dark;
+    stroke: $purple-dark;
+    position: relative;
+  }
+}
+
+/*   Responsive Media Queries   */
+@media screen and (max-width: 768px) {
+  section {
+    .svg-banner {
+      height: 30px;
+    }
+  }
+}

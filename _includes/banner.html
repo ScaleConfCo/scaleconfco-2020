@@ -2,17 +2,19 @@
 <header id="banner" class="banner">
   <div>
     <div class="banner-content">
-      <div class="glitch">
-        {% include svg/glitch.svg %}
-      </div>
+      <svg viewbox="0 0 10 1.2">
+        <text x="5" y="0.95">ScaleConf</text>
+        <text x="4.95" y="1">ScaleConf</text>
+      </svg>
 
-      <svg viewbox="0 0 10 1.2" class="glitch-filter">
-          <text x="5" y="0.95">ScaleConf</text>
-          <text class="glitch-filter__filtered-text" x="4.95" y="1">ScaleConf</text>
-        </svg>
       <h1><span>ScaleConf</span>Colombia</h1>
       <p class="date">{{ t.date }}</p>
       <a href="{{ t.buy.link }}" class="button tickets" target="_blank" onclick="ga('send', 'event', 'button', 'click', 'Buy your tickets');">{{ t.tickets }}</a>
     </div>
   </div>
 </header>
+<section class="svg">
+  <svg class="svg-banner" xmlns="http://www.w3.org/2000/svg" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path class="triangle" d="M0 0 L0 100 L100 0 Z"></path>
+  </svg>
+</section>
