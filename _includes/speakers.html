@@ -1,0 +1,46 @@
+{% assign t = site.data.[page.lang] %}
+
+<section class="speakers" id="speakers">
+  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="50" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <path class="triangle" d="M0 0 L100 100 L100 0 Z"></path>
+  </svg>
+
+  <div class="container">
+    <div class="title-background">
+      {% include svg/speakers_title.svg %}
+    </div>
+    <div>
+      {% for speaker in site.speakers %}
+        <div class="speaker">
+            {% if speaker.photo %}
+              {% assign picture = speaker.photo %}
+              {% assign default = false %}
+            {% else %}
+              {% assign picture = "400.png" %}
+              {% assign default = true %}
+            {% endif %}
+            <div class="speaker-img {% if default %}default{% endif %}" style="background-image: url('/assets/images/speakers/{{ picture }}')" onclick="toggleSpeaker(this)">
+              <div class="speaker-img-social">
+                {% if speaker.twitter %}
+                  <a href="https://www.twitter.com/{{ speaker.twitter }}/"><i class="icon white twitter" alt="{{ speaker.name }} twitter"></i></a>
+                {% endif %}
+                {% if speaker.facebook %}
+                  <a href="https://www.facebook.com/{{ speaker.facebook }}/"><i class="icon white facebook" alt="{{ speaker.name }} facebook"></i></a>
+                {% endif %}
+                {% if speaker.website %}
+                  <a href="{{ speaker.website }}"><i class="icon white website" alt="{{ speaker.name }} website"></i></a>
+                {% endif %}
+              </div>
+            </div>
+            <p class="speaker-name">{{ speaker.name }}</p>
+            <p class="speaker-description">{% if speaker.position %}{{ speaker.position }} @ {% endif %}{{ speaker.company }}</p>
+        </div>
+      {% endfor %}
+    </div>
+    <h3><span>More to be announced,</span> <span>stay tuned!</span></h3>
+  </div>
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="50" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <path class="triangle" d="M0 100 L100 100 L100 0 Z"></path>
+  </svg>
+</section>
