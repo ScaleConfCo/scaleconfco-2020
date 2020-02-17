@@ -15,6 +15,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: $gray;
+  overflow-x: hidden;
 }
 
 .button {
@@ -39,6 +40,12 @@ section {
   svg.title {
     max-height: 80px;
     width: 100%;
+  }
+  div.title-background {
+    background-image: url('/assets/images/background_titles.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
@@ -81,6 +88,6 @@ section.section--dark {
   }
 }
 
-@import 'grid', 'banner', 'sections', 'venue', 'about', 'footer', 'mailing', 'internal', 'svgs';
+@import 'grid', 'banner', 'sections', 'venue', 'about', 'speakers', 'footer', 'mailing', 'internal', 'svgs';
 
   

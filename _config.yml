@@ -14,11 +14,25 @@ repository: scaleconfco-2020/scaleconfco.github.io
 markdown: kramdown
 plugins:
   - jekyll-feed
-  #- jekyll-redirect-from
+  - jekyll-redirect-from
 
 sass:
   sass_dir: _sass
   style: compressed
+
+collections:
+  speakers:
+    output: false
+    permalink: /speaker/:slug.html
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: speakers
+    values:
+      layout: speaker
+      lang: en
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
